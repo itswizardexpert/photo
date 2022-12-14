@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photography</title>
+    <link href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <div id="jumbotron">
+    <div class="header">
+      <h1 class="header_1">I am <span>Kevin McHugh</span></h1>
+      <h2 class="header_2">Photographer</h2>
+    </div>
+  </div> 
+
+  <div class="navbar">
+    <a href="photo.html">Home</a>
+    <div class="dropdown">
+      <button id="button" class="dropbtn">My Work
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Work_2.html">OutDoors</a>
+        <a href="Work_3.html">Zoo</a>
+        <a href="Work_4.html">People</a>
+        <a href="Work_5.html">Holiday</a>
+      </div>
+    </div>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+      
+      
+      <div id="portfolio">
+        <h1>My Work</h1>
+        <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+  
+    <div class="mySlides">
+        <img src="https://cdn.discordapp.com/attachments/928388003867541534/1050214867254120478/DSC0355.NEF.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+        <img src="https://cdn.discordapp.com/attachments/928388003867541534/1050223285922713660/IMGP3145.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+        <img src="https://cdn.discordapp.com/attachments/928388003867541534/1050208596341833760/DSC0350.jpg" style="width:100%">
+    </div>
+  
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+
+</div>
+<div class="row">
+    <div class="column">
+      <img src="https://cdn.discordapp.com/attachments/928388003867541534/1050214867254120478/DSC0355.NEF.jpg"  style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="https://cdn.discordapp.com/attachments/928388003867541534/1050223285922713660/IMGP3145.JPG"  style="width:100%" onclick="myFunction(this);">
+      </div>
+    <div class="column">
+      <img src="https://cdn.discordapp.com/attachments/928388003867541534/1050208596341833760/DSC0350.jpg"  style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+</div>
+<div class="container_1">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+<div class="footer">
+    <p>© COPYRIGHT ALL RIGHTS RESERVED</p>
+</div>
+      <script src="slide.js"></script>
+</html>
